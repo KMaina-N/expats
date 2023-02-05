@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+.nav-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    height: 96px;
+    padding: 0 15px;
+    background-color: #fff;
+    transition: left .25s;
+    width: 100%;
+}
+
+.nav-header .nav-top a .logo-text {
+    line-height: 90px;
+    transition: all .4s ease;
+    
+}
+
+.nav-top a {
+    line-height: 90px;
+    transition: all .4s ease;
+    text-decoration: none !important;
+}
+
+.nav-top i {
+    font-size: 26px;
+    color: #10d876;
+}
+
+.fredoka-font {
+    font-family: "Fredoka One",cursive;
+    font-size: 30px;
+    color: #05f !important;
+    font-weight: 600;
+
+}
+.text-success {
+    color: #10d876 !important;
+}
+
+.float-left {
+    float: left important;
+    outline:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form {
+    display: block;
+    margin-top: 0em;
+    margin-left: 10%;
+}
+.form-group {
+    position: relative;
+
+}
+
+.form-group i {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    font-size: 1.2rem;
+    color: rgb(190, 190, 190);
+    padding-bottom: 0.5rem !important;
+    padding-top: 0.5rem;
+}
+
+.form-group input {
+    font-weight: 500;
+    padding-left: 3rem !important;
+    padding-bottom: 0.5rem !important;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    border-radius: 30px;
+    font-size: 12px;
+    background-color: #eeee;
+    border: 0;
+    line-height: 32px;
+    width: 350px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.menu-icon {
+    font-size: 25px;
+    color: rgb(190, 190, 190);
+    cursor: pointer;
+    text-align: center;
+    padding: 0.5rem !important;
+    padding-right: 0.6rem !important;
+    margin-left: 1rem !important;
+    text-decoration: none;
+    background-color: rgb(247, 247, 247);
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.menu-icon:hover {
+    color: #10d876;
+    background-color: rgb(235, 234, 234);
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.menu-icon:active {
+    color: #10d876;
+    background-color: rgb(235, 234, 234);
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.management {
+    padding-left: 30%;
+}

@@ -1,0 +1,400 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <!-- http://uitheme.net/sociala/default.html?# -->
+  <head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static\css\home.css" />
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" />
+    <script
+      src="https://kit.fontawesome.com/66857c785c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"
+    ></script>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Toggle button -->
+
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+          <i class="fa-solid fa-bolt"></i>
+          <span class="brand fredoka-font">Expats.</span>
+        </a>
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Navbar brand -->
+
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <form class="header-search">
+              <div class="form-group">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Start typing to search" />
+              </div>
+            </form>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fa-solid fa-igloo"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-bolt"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-video"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-regular fa-user"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-store"></i>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+
+        <!-- Right elements -->
+        <div class="d-flex align-items-center">
+          <!-- Icon -->
+          <a class="text-reset me-3" href="#">
+            <i class="fa-regular fa-message"></i>
+          </a>
+
+          <!-- Notifications -->
+          <div class="dropdown">
+            <a
+              class="text-reset me-3 dropdown-toggle hidden-arrow"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fas fa-bell"></i>
+              <span class="badge rounded-pill badge-notification bg-danger"
+                >1</span
+              >
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <li>
+                <a class="dropdown-item" href="#">Some news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </div>
+          <a class="text-reset me-3" href="#">
+            <i class="fa-solid fa-cog"></i>
+          </a>
+          <!-- Avatar -->
+          <div class="dropdown">
+            <a
+              class="dropdown-toggle d-flex align-items-center hidden-arrow"
+              href="#"
+              id="navbarDropdownMenuAvatar"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                class="rounded-circle"
+                height="25"
+                alt="Black and White Portrait of a Man"
+                loading="lazy"
+              />
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="navbarDropdownMenuAvatar"
+            >
+              <li>
+                <a class="dropdown-item" href="#">My profile</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Settings</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#collapseExample"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <!-- Right elements -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Nav content -->
+    <div class="content">
+      <div class="nav-content collapse collapse-horizontal" id="collapseExample">
+        <div class="nav-wrap">
+          <div class="nav-caption">
+            <span>New Feeds</span>
+          </div>
+          <ul class="top-content">
+            <li></li>
+            <li class="nav-content-bttn">
+              <i class="fa-solid fa-tv"></i> Newsfeed
+            </li>
+            <li class="nav-content-bttn">
+              <i class="fa-solid fa-certificate"></i> Badges
+            </li>
+            <li class="nav-content-bttn">
+              <i class="fa-solid fa-globe"></i> Explore Stories
+            </li>
+            <li class="nav-content-bttn">
+              <i class="fa-solid fa-bolt"></i> Popular Groups
+            </li>
+            <li class="nav-content-bttn">
+              <i class="fa-regular fa-user"></i> Explore Events
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Nav content -->
+      <!-- POSTS -->
+      <div class="main-content">
+        <div class="middle-sidebar-bottom">
+          <div class="middle-sidebar-left">
+            <div class="row feed-body">
+              <div class="col">
+                <div class="card"></div>
+                <div class="card create-post">
+                  <div class="card-body p-0">
+                    <a href="#">
+                      <div class="pen">
+                        <i class="fa-solid fa-pen-fancy"></i>
+                      <span
+                        class="d-block ml-2"
+                        style="margin-left: 10px; font-size: 12px"
+                        >Create Post</span
+                      >
+                      </div>
+                      <div class="text-area">
+                        <img
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        class="rounded-circle"
+                        height="25"
+                        alt="Black and White Portrait of a Man"
+                        loading="lazy"
+                      />
+                      <form class="post-something" action="add_post/" method="post"> 
+                        {% csrf_token %}
+                        <textarea placeholder="What's in your mind" name="post"></textarea>
+                        <button type="submit" class="d-block ml-2 btn btn-primary" style="margin-left: 10px; font-size: 12px" id="post">Add to your post</button>
+                      </form>
+                      </div>
+                    </a>
+                    <br>
+                    <hr>
+                    <div class="media">
+                      <a href="#">
+                        <i class="fa-solid fa-video"></i>
+                        <span>Live Video</span>
+                      </a>
+                      <a href="#">
+                        <i class="fa-solid fa-images"></i>
+                        <span>Photo/Video</span>
+                      </a>
+                      <a href="#">
+                        <i class="fa-solid fa-smile"></i>
+                        <span>Feeling/Activity</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                {% for post in posts %}
+                <div class=" card post">
+                  <div class="">
+                    <span class="card-head">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                        class="rounded-circle"
+                        height="35"
+                        alt="Black and White Portrait of a Man"
+                        loading="lazy"
+                      />
+                      {% if request.user.is_authenticated %}
+                      <i class="fa-solid fa-circle" style="font-size: 10px; position: absolute; left: 20; color: rgb(45, 255, 3);"></i>
+                      {% endif %}
+                      <span class="card-head-text">
+                        <span class="card-head-name">{{post.author}}</span>
+                        <span class="card-head-time">1 hour ago</span>
+                        
+                        <!-- <i class="fa-solid fa-ellipsis-h"></i> -->
+                      </span>
+                    </span>
+                    
+                    <span class="card-body">
+                      <!-- <p class="the-post" style="overflow: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;display: inline-block; clear: both; width: 60%;">
+                        <span id="first-words">{{post.body|safe|slice:":50"}}</span>
+                        <span id="second-words" >{{post.body|safe|slice:"50:"}}</span> -->
+                        <p class="the-post">
+                          {{post.body|safe}}
+<br>
+<br>
+                        <a id="read-more">Read more</a>
+                        <!-- <a href="#" class="read-more" style="display: block;">Read More</a> -->
+                        <!-- Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                          <span id="dots">...</span><span id="more">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                        </span> -->
+                        <!-- <a href="#" id="myBtn" onclick="myFunction()">Read more</a>  -->
+                      </p>
+                      
+                    </span>
+
+                      <!-- <div class="post-img">
+                        <img
+                          src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.jpg"
+                          class="img-fluid"
+                          alt="..."
+                        />
+                  </div> -->
+                  <div class="reactions">
+                    <a href="add_like/{{post.id}}">
+                      <i class="fa-solid fa-thumbs-up"></i>
+                      <span>{{post.likes.count}} likes</span>
+                    </a>
+                    <a href="#">
+                      <i class="fa-regular fa-comment"></i>
+                      <!-- <span>Comment</span> -->
+                    </a>
+                    <a href="#">
+                      <i class="fa-solid fa-share"></i>
+                      <!-- <span>Share</span> -->
+                    </a>
+                  </div>
+                  
+                </div>
+                
+              
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var myNav = document.getElementById("collapseExample");
+      var screen = window.innerWidth;
+      if (screen < 768) {
+        console.log("hello");
+        myNav.classList.remove("show");
+      } else {
+        myNav.classList.add("show");
+      }
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more"; 
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less"; 
+          moreText.style.display = "inline";
+        }
+        }
+
+        var readMore = document.querySelectorAll("#read-more");
+        var firstWords = document.querySelectorAll("#first-words");
+        var secondWords = document.querySelectorAll("#second-words");
+        secondWords.hidden = false
+        for (var i = 0; i < readMore.length ; i+=1) {
+          // console.log("hello");
+          // console.log(readMore[i]);
+          // console.log(firstWords[i].style.display = "none");
+          x = secondWords[i]
+          
+          y = firstWords[i]
+          readMore[i].addEventListener("click", function(){
+          // console.log("clicked");
+          
+          console.log(x.style.display);
+          if(x.style.display === "none") {
+            console.log("display is none")
+            // y.style.display = "inline";
+            // x.style.display = "inline";
+            // x.style.color = "blue";
+            // console.log(x.style);
+            x.hidden = false;
+            readMore.innerHTML = "Read more";
+          }
+          })
+        }
+
+        
+    </script>
+    <!-- readMore.addEventListener("click", function(){
+          console.log("hello");
+          if (secondWords.style.display === "none") {
+            secondWords.style.display = "inline";
+            readMore.innerHTML = "Read less";
+            firstWords.style.display = "none";
+          } else {
+            secondWords.style.display = "none";
+            readMore.innerHTML = "Read more";
+            firstWords.style.display = "inline";
+          }
+        }) -->
+  </body>
+</html>
