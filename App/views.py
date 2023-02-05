@@ -1,8 +1,22 @@
 from django.shortcuts import render, redirect
 from .models import*
+from django.contrib.auth import authenticate, login as auth_login
 
 # Create your views here.
 # https://github.com/legionscript/socialnetwork/blob/tutorial11/social/views.py
+def login(request):
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        user = authenticate(username=username, password=password)
+        if user is not None:
+            auth_login(request, user)
+            return redirect('home')
+        else:
+            return redirect('login')
+    return render(request, 'login.html', {})
+
+
 def home(request):
     print(request.user)
     logged_in = request.user
