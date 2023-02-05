@@ -11,7 +11,7 @@ body {
     color: #10d876;
 }
 .fredoka-font {
-    font-family: "Fredoka One",cursive;
+    font-family: "Fredoka One",cursive !important;
     font-size: 30px;
     color: #05f !important;
     font-weight: 600;
